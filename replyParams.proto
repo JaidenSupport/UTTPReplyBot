@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message replyParams
+{
+  string videoId = 2;
+  string commentId = 4;
+}
