@@ -24,7 +24,6 @@ Based off [Admiral's Reply Bot](https://auttp.com/chatlogs/UTTPNETv3/knowledge-b
     ```bash
     npm i protobufjs
     npm i axios
-    npm i googleapis
     ```
    **Note:** If you encounter an error stating 'npm is not recognized', ensure NodeJS is installed correctly.
 4. Configure the script by running:
