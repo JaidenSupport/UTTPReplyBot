@@ -31,7 +31,6 @@ const getConfiguration = async () => {
   const randomNumbersResponse = await askQuestion('Would you like to add random numbers to the replies? (yes/no): ');
   config.addRandomNumbers = randomNumbersResponse.toLowerCase() === 'yes';
   config.videoId = await askQuestion('Enter the video ID: ');
-  config.apiKey = await askQuestion('Enter your YouTube API key: ');
   config.channelIdsFile = './channel_ids.txt';
   config.commentIdsFile = './comment_ids.txt';
   config.replyParamsProtoFile = './replyParams.proto';
