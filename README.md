@@ -3,9 +3,6 @@ Based off [Admiral's Reply Bot](https://auttp.com/chatlogs/UTTPNETv3/knowledge-b
 ### Prerequisites
 
 * **[NodeJS](https://nodejs.org/)** 
-* **YouTube API Key:** You will need a YouTube API key to retrieve comment IDs (keyless coming soon). Follow one of these tutorials to get one:
-    * **[YouTube](https://www.youtube.com/watch?v=44OBOSBd73M)** 
-    * **[Github](https://gist.github.com/zekroTJA/15f482cb8f5f897cb8b96fd0a33e8c49)** 
 * **Brand Accounts:** \
         Creating more than 5 brand accounts on a single main account could lead to your main account getting terminated. \
         1. Open YouTube and click on your profile picture. Click on "Google Account." now in the google account dashboard click on your profile picture again, your main account's email address will be displayed at the top of your profile picture. \
@@ -38,7 +35,6 @@ Based off [Admiral's Reply Bot](https://auttp.com/chatlogs/UTTPNETv3/knowledge-b
     * Set the desired reply text.
     * Choose whether to add random numbers to replies (recommended if you don't have a lot of brand accounts, this avoids spam filters).
     * Enter the YouTube video ID (the part after `watch?v=` in a youtube video URL).
-    * Provide your YouTube API key.
     * Input cookies:
         * Open YouTube in your browser while logged into your **main** youtube account, click on your profile picture then switch channels if needed.
         * Open the developer tools (usually by pressing F12 or right-clicking and selecting "Inspect").
