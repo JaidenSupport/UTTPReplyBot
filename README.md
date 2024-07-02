@@ -1,5 +1,5 @@
 ## UTTP Reply Bot
-
+Based off [Admiral's Reply Bot](https://auttp.com/chatlogs/UTTPNETv3/knowledge-base.html)
 ### Prerequisites
 
 * **[NodeJS](https://nodejs.org/)** 
