@@ -1,32 +1,24 @@
-const { google } = require('googleapis');
 const fs = require('fs');
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
-
-const apiKey = config.apiKey;
 const videoId = config.videoId;
 
-const youtube = google.youtube({
-  version: 'v3',
-  auth: apiKey,
-});
+const customEndpointUrl = `https://yt.lemnoslife.com/noKey/commentThreads?part=snippet&videoId=${videoId}&maxResults=100`;
 
 async function fetchCommentIds() {
   let commentIds = [];
-  let nextPageToken = '';
+  let nextPageToken = ''; 
 
   do {
-    const res = await youtube.commentThreads.list({
-      part: 'snippet',
-      videoId: videoId,
-      maxResults: 100,
-      pageToken: nextPageToken,
-    });
-    commentIds = commentIds.concat(
-      res.data.items.map((item) => item.id)
-    );
+    const url = nextPageToken 
+      ? `${customEndpointUrl}&pageToken=${nextPageToken}` 
+      : customEndpointUrl;
 
-    nextPageToken = res.data.nextPageToken;
+    const res = await fetch(url);
+    const data = await res.json();
+
+    commentIds = commentIds.concat(data.items.map((item) => item.id));
+    nextPageToken = data.nextPageToken; 
   } while (nextPageToken);
 
   return commentIds;
