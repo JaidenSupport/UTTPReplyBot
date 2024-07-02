@@ -3,7 +3,7 @@ Based off [Admiral's Reply Bot](https://auttp.com/chatlogs/UTTPNETv3/knowledge-b
 ### Prerequisites
 
 * **[NodeJS](https://nodejs.org/)** 
-* **YouTube API Key:** You will need a YouTube API key to retrieve comment IDs. Follow one of these tutorials to get one:
+* **YouTube API Key:** You will need a YouTube API key to retrieve comment IDs (keyless coming soon). Follow one of these tutorials to get one:
     * **[YouTube](https://www.youtube.com/watch?v=44OBOSBd73M)** 
     * **[Github](https://gist.github.com/zekroTJA/15f482cb8f5f897cb8b96fd0a33e8c49)** 
 * **Brand Accounts:** \
