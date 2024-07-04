@@ -65,3 +65,7 @@ The script will automatically fetch comment IDs from the specified video and sta
         * Verify the accuracy of the entered channel IDs.
 
 If you have any issues setting up the script DM `jaidensupportalt` on discord or join our [discord server](https://discord.gg/keBHhfpCaA) and create a ticket 
+
+todo:
+multithreading
+gui?
