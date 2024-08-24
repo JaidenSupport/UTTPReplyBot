@@ -1,5 +1,5 @@
 ## UTTP Reply Bot
-Based off [Admiral's Reply Bot](https://auttp.com/chatlogs/UTTPNETv3/knowledge-base.html)
+Based on [Admiral's Reply Bot](https://auttp.com/chatlogs/UTTPNETv3/knowledge-base.html)
 ### Prerequisites
 
 * **[NodeJS](https://nodejs.org/)** 
@@ -26,6 +26,9 @@ Based off [Admiral's Reply Bot](https://auttp.com/chatlogs/UTTPNETv3/knowledge-b
     npm i axios
     ```
    **Note:** If you encounter an error stating 'npm is not recognized', ensure NodeJS is installed correctly.
+>[!NOTE]
+> You don't need to follow the step from [ADMIRAL MIDNIGHT "III AM"](https://auttp.com/chatlogs/UTTPNETv3/knowledge-base.html), use step 4 instead.
+
 4. Configure the script by running:
     ```bash
     node setup.js
@@ -40,9 +43,9 @@ Based off [Admiral's Reply Bot](https://auttp.com/chatlogs/UTTPNETv3/knowledge-b
         * Go to the "Application" tab (might be under a ">>" icon).
         * Expand the "Cookies" section and select "youtube.com."
         * Search for and copy the values of these three cookies:
-            * `SECURE_1PAPISID`
-            * `SECURE_1PSID`
-            * `SECURE_1PSIDTS` (choose the second one if you see two)
+            * `__Secure-1PAPISID` (`SECURE_1PAPISID` in prompt)
+            * `__Secure-1PSID` (`SECURE_1PSID` in prompt)
+            * `__Secure-1PSIDTS` (`SECURE_1PSIDTS` in prompt, choose the second one if you see two)
        * **Important:** These cookies expire quickly. Obtain them quickly and close your browser after copying.
     * Set the minimum and maximum delay (in milliseconds) between replies.
     * Choose whether the script should loop indefinitely.
@@ -58,14 +61,19 @@ The script will automatically fetch comment IDs from the specified video and sta
 ### Common Errors
 
 * **Error 403:** 
-    * Possible causes: incorrect or expired cookies, missing "Manager" permissions on the brand account, or an incorrect channel ID.
+    * Possible causes:
+        * Incorrect or expired cookies
+        * Missing "Manager" permissions on the brand account, or an incorrect channel ID.
+        * Rate limited
     * Solutions: 
         * Double-check your copied cookies and obtain fresh ones if needed.
         * Ensure your main account has "Manager" permissions for each brand account.
         * Verify the accuracy of the entered channel IDs.
+        * Wait a few minutes and try again (or use VPN)
 
 If you have any issues setting up the script DM `jaidensupportalt` on discord or join our [discord server](https://discord.gg/keBHhfpCaA) and create a ticket 
 
 todo: \
 multithreading \
+proxy support \
 gui?
